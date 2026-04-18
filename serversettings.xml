@@ -1,192 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <serversettings
- name="Server"
- port="27015"
- queryport="27016"
- password=""
- enableupnp="false"
- ServerMessage=""
- HiddenSubs=""
- AllowedRandomMissionTypes="AbandonedOutpost,Beacon,Cargo,ClearAlienRuins,EliminateTargets,Escort,KingOfTheHull,Mineral,Monster,Nest,OutpostCombat,OutpostDestroy,Pirate,SalvageCave,SalvageRuin,SalvageWreck,ScanAlienRuins,SubVsSubCombat,jailbreak"
- AllowedClientNameChars="32-33,38-46,48-57,65-90,91-91,93-93,95-122,192-255,384-591,1024-1279,4352-4607,44032-55215,19968-21327,21329-40959,13312-19903,131072-173791,173824-178207,178208-183983,63744-64255,194560-195103"
- ServerName="DaTa4"
- ServerMessageText=""
- IsPublic="False"
- TickRate="20"
- MaxLagCompensation="150"
- RequireAuthentication="True"
- RandomizeSeed="True"
- UseRespawnShuttle="True"
- RespawnInterval="300"
- MaxTransportTime="180"
- MinRespawnRatio="0.2"
- SkillLossPercentageOnDeath="20"
- SkillLossPercentageOnImmediateRespawn="10"
- ReplaceCostPercentage="100"
- AllowBotTakeoverOnPermadeath="True"
- IronmanMode="False"
- AutoRestartInterval="60"
- StartWhenClientsReady="False"
- PvpTeamSelectionMode="PlayerPreference"
- PvpAutoBalanceThreshold="1"
- StartWhenClientsReadyRatio="0.8"
- PvPStunResist="0"
- PvPSpawnMonsters="False"
- PvPSpawnWrecks="True"
- Biome="Random"
- SelectedOutpostName="Random"
- AllowSpectating="True"
- SaveServerLogs="True"
- AllowModDownloads="True"
- AllowFileTransfers="True"
- VoiceChatEnabled="True"
- PlayStyle="Casual"
- LosMode="Transparent"
- ShowEnemyHealthBars="ShowAll"
- LinesPerLogFile="800"
- AutoRestart="False"
- AllowVoteKick="True"
- AllowEndVoting="True"
- RespawnMode="MidRound"
- BotCount="0"
- MaxBotCount="16"
- BotSpawnMode="Normal"
- DisableBotConversations="False"
- SelectedLevelDifficulty="0"
- AllowDisguises="True"
- AllowRewiring="True"
- AllowImmediateItemDelivery="True"
- LockAllDefaultWires="False"
- AllowLinkingWifiToChat="False"
- AllowFriendlyFire="True"
- AllowDragAndDropGive="True"
- DestructibleOutposts="False"
- KillableNPCs="True"
- BanAfterWrongPassword="True"
- MaxPasswordRetriesBeforeBan="3"
- EnableDoSProtection="True"
- MaxPacketAmount="4000"
- SelectedSubmarine=""
- SelectedShuttle=""
- TraitorProbability="0"
- TraitorDangerLevel="1"
- TraitorsMinPlayerCount="1"
- MinPercentageOfPlayersForTraitorAccusation="50"
- Language="English"
- SubSelectionMode="Manual"
- ModeSelectionMode="Manual"
- EndVoteRequiredRatio="0.6"
- VoteRequiredRatio="0.6"
- VoteTimeout="30"
- KickVoteRequiredRatio="0.6"
- DisallowKickVoteTime="120"
- KillDisconnectedTime="300"
- DespawnDisconnectedPermadeathTime="10"
- KickAFKTime="600"
- MinimumMidRoundSyncTimeout="10"
- KarmaEnabled="False"
- KarmaPreset="default"
- GameModeIdentifier="sandbox"
- MissionTypes="AbandonedOutpost,Beacon,Cargo,ClearAlienRuins,EliminateTargets,Escort,KingOfTheHull,Mineral,Monster,Nest,OutpostCombat,OutpostDestroy,Pirate,SalvageCave,SalvageRuin,SalvageWreck,ScanAlienRuins,SubVsSubCombat,jailbreak"
- MaxPlayers="10"
- AutoBanTime="3600"
- MaxAutoBanTime="86400"
- LootedMoneyDestination="Bank"
- MaximumMoneyTransferRequest="999999"
- NewCampaignDefaultSalary="0"
- TrackOpponentInPvP="True"
- DisembarkPointAllowance="7"
- SelectedCoalitionPerks="airlockbasic;armorysmall;engineeringshiprepair;medbayfirstaid;hullupgradesteel"
- WinScorePvP="200"
- SelectedSeparatistsPerks="airlockbasic;armorysmall;engineeringshiprepair;medbayfirstaid;hullupgradesteel"
- DisabledMonsters="">
- <campaignsettings
-   PresetName="Normal"
-   TutorialEnabled="True"
-   RadiationEnabled="False"
-   MaxMissionCount="2"
-   WorldHostility="Medium"
-   StartItemSet="normal"
-   StartingBalanceAmount="Medium"
-   CrewVitalityMultiplier="1"
-   NonCrewVitalityMultiplier="1"
-   OxygenMultiplier="1"
-   FuelMultiplier="1"
-   MissionRewardMultiplier="1"
-   ExperienceRewardMultiplier="1"
-   ShopPriceMultiplier="1"
-   ShipyardPriceMultiplier="1"
-   RepairFailMultiplier="1"
-   ShowHuskWarning="True"
-   PatdownProbability="Medium" />
- <contentpackages>
-   <!--Vanilla-->
-   <corepackage
-     path="Content/ContentPackages/Vanilla.xml" />
-   <regularpackages>
-     <!--Fully functional Russian roulette-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/3031160176/filelist.xml" />
-     <!--Barotraumatic-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2518816103/filelist.xml" />
-     <!--Movable and Sellable Wrecks-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2772926011/filelist.xml" />
-     <!--New Wrecks For Barotrauma (With sellable wrecks)-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2184257427/filelist.xml" />
-     <!--Neurotrauma-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/3190189044/filelist.xml" />
-     <!--Beacons Extended-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2389600483/filelist.xml" />
-     <!--Hotkey Reload-Swap-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2887170458/filelist.xml" />
-     <!--Storage Icons-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2920200449/filelist.xml" />
-     <!--Shipwrecks Extended-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2095211492/filelist.xml" />
-     <!--NT Eyes-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/3294574390/filelist.xml" />
-     <!--Stations from beyond-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2585543390/filelist.xml" />
-     <!--Artifacts and Ruins Enhanced-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/3218219821/filelist.xml" />
-     <!--LuaCsForBarotrauma-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2559634234/filelist.xml" />
-     <!--DynamicEuropa-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2532991202/filelist.xml" />
-     <!--Improved Husks-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2085783214/filelist.xml" />
-     <!--ADV Beacon Stations-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2544952900/filelist.xml" />
-     <!--Sounds Of Europa-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2347002377/filelist.xml" />
-     <!--Real Sonar-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2936760984/filelist.xml" />
-     <!--ID Cards Enhanced-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/3115903148/filelist.xml" />
-     <!--Modding Toolkit-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2905375979/filelist.xml" />
-     <!--CsForBarotrauma-->
-     <package
-       path="/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/Installed/2795927223/filelist.xml" />
-   </regularpackages>
- </contentpackages>
+  port="27015"
+  queryport="27016"
+  password="72"
+  enableupnp="false"
+  HiddenSubs=""
+  AllowedRandomMissionTypes="AbandonedOutpost,AbandonedOutpostAssassinate,AbandonedOutpostMonsters,Beacon,Cargo,ClearAlienRuins,EliminateThalamus,Escort,KingOfTheHull,Mineral,Monster,Nest,OutpostCombat,OutpostDestroy,OutpostRescue,Pirate,Salvage,SalvageRuin,SalvageWreck,ScanAlienRuins,SubVsSubCombat"
+  AllowedClientNameChars="32-33,38-46,48-57,65-90,91-91,93-93,95-122,192-255,384-591,1024-1279,4352-4607,44032-55215,19968-21327,21329-40959,13312-19903,131072-173791,173824-178207,178208-183983,63744-64255,194560-195103"
+  ServerName="DaTa4"
+  ServerMessageText=""
+  IsPublic="False"
+  TickRate="20"
+  MaxLagCompensation="150"
+  RequireAuthentication="True"
+  RandomizeSeed="True"
+  UseRespawnShuttle="True"
+  RespawnInterval="30"
+  MaxTransportTime="180"
+  MinRespawnRatio="0.2"
+  SkillLossPercentageOnDeath="20"
+  SkillLossPercentageOnImmediateRespawn="10"
+  ReplaceCostPercentage="100"
+  AllowBotTakeoverOnPermadeath="True"
+  IronmanMode="False"
+  AutoRestartInterval="60"
+  StartWhenClientsReady="False"
+  PvpTeamSelectionMode="PlayerPreference"
+  PvpAutoBalanceThreshold="1"
+  StartWhenClientsReadyRatio="0.8"
+  PvPStunResist="0"
+  PvPSpawnMonsters="False"
+  PvPSpawnWrecks="True"
+  Biome="Random"
+  SelectedOutpostName="Random"
+  AllowSpectating="True"
+  AllowAFK="True"
+  SaveServerLogs="True"
+  AllowModDownloads="True"
+  AllowFileTransfers="True"
+  AllowRemoteCampaignInteractions="False"
+  VoiceChatEnabled="True"
+  PlayStyle="Casual"
+  LosMode="Transparent"
+  ShowEnemyHealthBars="ShowAll"
+  LinesPerLogFile="800"
+  AutoRestart="False"
+  AllowVoteKick="False"
+  AllowEndVoting="True"
+  RespawnMode="MidRound"
+  BotCount="0"
+  MaxBotCount="16"
+  BotSpawnMode="Normal"
+  DisableBotConversations="False"
+  SelectedLevelDifficulty="25"
+  AllowDisguises="True"
+  AllowRewiring="True"
+  AllowImmediateItemDelivery="True"
+  LockAllDefaultWires="False"
+  AllowLinkingWifiToChat="False"
+  AllowFriendlyFire="True"
+  AllowDragAndDropGive="True"
+  DestructibleOutposts="True"
+  KillableNPCs="True"
+  BanAfterWrongPassword="False"
+  MaxPasswordRetriesBeforeBan="3"
+  EnableDoSProtection="True"
+  MaxPacketAmount="4000"
+  SelectedSubmarine="Dugong"
+  SelectedShuttle="Venture"
+  TraitorProbability="0.35"
+  TraitorDangerLevel="3"
+  TraitorsMinPlayerCount="1"
+  MinPercentageOfPlayersForTraitorAccusation="50"
+  Language="Russian"
+  SubSelectionMode="Manual"
+  ModeSelectionMode="Manual"
+  EndVoteRequiredRatio="0.6"
+  VoteRequiredRatio="0.6"
+  VoteTimeout="30"
+  KickVoteRequiredRatio="0.6"
+  DisallowKickVoteTime="120"
+  KillDisconnectedTime="300"
+  DespawnDisconnectedPermadeathTime="10"
+  KickAFKTime="600"
+  MinimumMidRoundSyncTimeout="30"
+  RoundStartSyncDuration="120"
+  EventRemovalTime="15"
+  OldReceivedEventKickTime="20"
+  OldEventKickTime="40"
+  TimeoutThresholdNotInGame="60"
+  TimeoutThresholdInGame="10"
+  KarmaEnabled="False"
+  KarmaPreset="default"
+  GameModeIdentifier="multiplayercampaign"
+  MissionTypes="AbandonedOutpost,AbandonedOutpostAssassinate,AbandonedOutpostMonsters,Beacon,Cargo,ClearAlienRuins,EliminateThalamus,Escort,KingOfTheHull,Mineral,Monster,Nest,OutpostCombat,OutpostDestroy,OutpostRescue,Pirate,Salvage,SalvageRuin,SalvageWreck,ScanAlienRuins,SubVsSubCombat"
+  MaxPlayers="10"
+  AutoBanTime="3600"
+  MaxAutoBanTime="86400"
+  LootedMoneyDestination="Bank"
+  MaximumMoneyTransferRequest="999999"
+  NewCampaignDefaultSalary="14.999999"
+  TrackOpponentInPvP="True"
+  DisembarkPointAllowance="7"
+  SelectedCoalitionPerks="hullupgradesteel;engineeringshiprepair;armorysmall;medbayfirstaid;airlockbasic"
+  WinScorePvP="200"
+  SelectedSeparatistsPerks="hullupgradesteel;engineeringshiprepair;armorysmall;medbayfirstaid;airlockbasic"
+  DisabledMonsters="">
+  <campaignsettings
+    PresetName=""
+    TutorialEnabled="False"
+    RadiationEnabled="False"
+    MaxMissionCount="2"
+    WorldHostility="Medium"
+    StartItemSet="normal"
+    StartingBalanceAmount="Medium"
+    CrewVitalityMultiplier="1"
+    NonCrewVitalityMultiplier="1"
+    OxygenMultiplier="1"
+    FuelMultiplier="1"
+    MissionRewardMultiplier="1"
+    ExperienceRewardMultiplier="1"
+    ShopPriceMultiplier="1"
+    ShipyardPriceMultiplier="1"
+    RepairFailMultiplier="1"
+    ShowHuskWarning="True"
+    PatdownProbability="Medium" />
 </serversettings>

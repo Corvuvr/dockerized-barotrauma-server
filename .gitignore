@@ -1,3 +1,10 @@
+*
 Installed/*
 !Installed/README.md
-
+!README.md
+!Dockerfile
+!clientpermissions.xml
+!config_player.xml
+!serversettings.xml
+!generate.sh
+!start.sh

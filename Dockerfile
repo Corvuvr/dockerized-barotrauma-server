@@ -44,9 +44,13 @@ RUN mkdir -p $HOME/.steam \
 RUN steamcmd +login anonymous +app_update 1026340 validate +quit
 
 COPY Installed .
+COPY config_player.xml .
 COPY serversettings.xml .
 COPY clientpermissions.xml .
 COPY start.sh .
-RUN chmod +x start.sh
+COPY generate.sh .
+
+RUN chmod +x start.sh generate.sh
+RUN ./generate.sh config_player.xml serversettings.xml
 
 CMD  ["./start.sh"]

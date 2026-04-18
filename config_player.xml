@@ -1,0 +1,274 @@
+﻿<config
+  language="Russian"
+  verboselogging="false"
+  savedebugconsolelogs="false"
+  savepath=""
+  subeditorundobuffer="32"
+  maxautosaves="8"
+  autosaveintervalseconds="300"
+  subeditorbackground="#0D2545"
+  enablesplashscreen="true"
+  pauseonfocuslost="true"
+  aimassistamount="0.05"
+  enablemouselook="true"
+  showenemyhealthbars="ShowAll"
+  chatspeechbubbles="true"
+  interactionlabeldisplaymode="Everything"
+  chatopen="true"
+  crewmenuopen="false"
+  showoffensiveserverprompt="false"
+  tutorialskipwarning="false"
+  corpsedespawndelay="600"
+  corpsedespawndelaypvp="60"
+  corpsespersubdespawnthreshold="5"
+  usedualmodesockets="true"
+  disableingamehints="true"
+  enablesubmarineautosave="true"
+  quickstartsub=""
+  remotemainmenucontenturl="https://www.barotraumagame.com/gamedata/"
+  remotecontenttimeoutseconds="15"
+  crossplaychoice="Enabled"
+  savedcampaignsettings="&lt;campaignsettings PresetName=&quot;&quot; TutorialEnabled=&quot;True&quot; RadiationEnabled=&quot;True&quot; MaxMissionCount=&quot;2&quot; WorldHostility=&quot;High&quot; StartItemSet=&quot;normal&quot; StartingBalanceAmount=&quot;Medium&quot; CrewVitalityMultiplier=&quot;1&quot; NonCrewVitalityMultiplier=&quot;1&quot; OxygenMultiplier=&quot;1&quot; FuelMultiplier=&quot;1&quot; MissionRewardMultiplier=&quot;1&quot; ExperienceRewardMultiplier=&quot;1&quot; ShopPriceMultiplier=&quot;1&quot; ShipyardPriceMultiplier=&quot;1&quot; RepairFailMultiplier=&quot;1&quot; ShowHuskWarning=&quot;True&quot; PatdownProbability=&quot;Medium&quot; /&gt;"
+  disableglobalspamlist="false"
+  DismissedNotifications="">
+  <graphicssettings
+    display="0"
+    width="2560"
+    height="1440"
+    vsync="true"
+    compresstextures="true"
+    framelimit="300"
+    displaymode="BorderlessWindowed"
+    particlelimit="1500"
+    specularity="true"
+    chromaticaberration="true"
+    losmode="Transparent"
+    hudscale="1"
+    inventoryscale="1"
+    lightmapscale="1"
+    visiblelightlimit="100"
+    textscale="1"
+    radialdistortion="true" />
+  <audio
+    musicvolume="0.14999999"
+    soundvolume="0.29999998"
+    uivolume="0.3"
+    voicechatvolume="0.5"
+    voicechatcutoffprevention="200"
+    microphonevolume="5"
+    muteonfocuslost="false"
+    dynamicrangecompressionenabled="true"
+    usedirectionalvoicechat="true"
+    voipattenuationenabled="true"
+    voicesetting="PushToTalk"
+    audiooutputdevice="OpenAL_x0020_Soft_x0020_on_x0020_Динамики_x0020__x0028_Focusrite_x0020_USB_x0020_Audio_x0029_"
+    voicecapturedevice=""
+    noisegatethreshold="0"
+    disablevoicechatfilters="false" />
+  <contentpackages>
+    <!--Vanilla-->
+    <corepackage
+      path="Content/ContentPackages/Vanilla.xml" />
+    <regularpackages>
+      <!--Modding Toolkit-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2905375979/filelist.xml" />
+      <!--CsForBarotrauma-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2795927223/filelist.xml" />
+      <!--LuaCsForBarotrauma-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2559634234/filelist.xml" />
+      <!--Real Sonar-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2936760984/filelist.xml" />
+      <!--BarotraumaRadio-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3559932434/filelist.xml" />
+      <!--Enhanced Reactors-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3045796581/filelist.xml" />
+      <!--DynamicEuropa-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2532991202/filelist.xml" />
+      <!--Neurotrauma-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3190189044/filelist.xml" />
+      <!--NT Eyes-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3294574390/filelist.xml" />
+      <!--BetterHealthUI (Rework)-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3231293294/filelist.xml" />
+      <!--Sounds Of Europa-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2347002377/filelist.xml" />
+      <!--ID Cards Enhanced-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3115903148/filelist.xml" />
+      <!--Hotkey Reload-Swap-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2887170458/filelist.xml" />
+      <!--Shipwrecks Extended-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2095211492/filelist.xml" />
+      <!--New Wrecks For Barotrauma (With sellable wrecks)-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2184257427/filelist.xml" />
+      <!--Beacons Extended-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2389600483/filelist.xml" />
+      <!--ADV Beacon Stations-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2544952900/filelist.xml" />
+      <!--Stations from beyond-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2585543390/filelist.xml" />
+      <!--Movable and Sellable Wrecks-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2772926011/filelist.xml" />
+      <!--Storage Icons-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2920200449/filelist.xml" />
+      <!--Fully functional Russian roulette-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3031160176/filelist.xml" />
+      <!--Improved Husks-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2085783214/filelist.xml" />
+      <!--Artifacts and Ruins Enhanced-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3218219821/filelist.xml" />
+      <!--Barotraumatic-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2518816103/filelist.xml" />
+      <!--Better Alcohol-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3352632698/filelist.xml" />
+      <!--Better Genes-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3369216550/filelist.xml" />
+      <!--Winterhalted-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3084013118/filelist.xml" />
+      <!--Community Curated Subs Continued-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3112866988/filelist.xml" />
+      <!--Витязь-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3041180399/filelist.xml" />
+      <!--Tyran-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3409116884/filelist.xml" />
+      <!--Hydra-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3355821370/filelist.xml" />
+      <!--S-611 Greyhound-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3299749458/filelist.xml" />
+      <!--S-618 SCORCH-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3037572847/filelist.xml" />
+      <!--ECM RESOLUTE-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/2831991949/filelist.xml" />
+      <!--Wootten-->
+      <package
+        path="/home/corvur/code/dockerized-barotrauma-server/Installed/3115048669/filelist.xml" />
+    </regularpackages>
+  </contentpackages>
+  <serverfilters />
+  <player
+    name="Corvuvr"
+    tags="male,head9"
+    HairIndex="15"
+    BeardIndex="0"
+    MoustacheIndex="0"
+    FaceAttachmentIndex="13"
+    HairColor="#473637"
+    FacialHairColor="#DED7CC"
+    SkinColor="#FCE1C6">
+    <job
+      identifier="assistant"
+      variant="0" />
+    <job
+      identifier="captain"
+      variant="1" />
+    <job
+      identifier="securityofficer"
+      variant="0" />
+  </player>
+  <ignoredhints
+    identifiers="traitorsonboard,traitorsonboard2,onshowhealthinterface,onstartedinteracting.item.navterminal,onstartedcontrolling.job.mechanic,onadjacenthull.highpressure,onadjacenthull.highwaterpercentage,reminder.commandinterface,onsonarspottedenemy,onstartedinteracting.brokenitem,onstartedinteracting.turretperiscope,oncharacterunconscious,onreactoroutoffuel,reminder.toolbelt" />
+  <debugconsolemapping />
+  <tutorials />
+  <keymapping
+    Select="PrimaryMouse"
+    Use="E"
+    Aim="SecondaryMouse"
+    Up="W"
+    Down="S"
+    Left="A"
+    Right="D"
+    Attack="R"
+    Run="LeftShift"
+    ToggleRun="None"
+    Crouch="LeftControl"
+    InfoTab="Tab"
+    Chat="None"
+    RadioChat="None"
+    CrewOrders="C"
+    Ragdoll="Space"
+    Health="H"
+    Grab="G"
+    DropItem="None"
+    SelectNextCharacter="Z"
+    SelectPreviousCharacter="X"
+    Voice="V"
+    RadioVoice="None"
+    LocalVoice="None"
+    Deselect="SecondaryMouse"
+    Shoot="PrimaryMouse"
+    Command="MiddleMouse"
+    ContextualCommand="LeftShift"
+    ToggleInventory="Q"
+    TakeOneFromInventorySlot="LeftControl"
+    TakeHalfFromInventorySlot="LeftShift"
+    NextFireMode="MouseWheelUp"
+    PreviousFireMode="MouseWheelDown"
+    ActiveChat="T"
+    ToggleChatMode="R"
+    ChatBox="B"
+    ShowInteractionLabels="LeftAlt" />
+  <inventorykeymapping
+    slot0="D1"
+    slot1="D2"
+    slot2="D3"
+    slot3="D4"
+    slot4="D5"
+    slot5="D6"
+    slot6="D7"
+    slot7="D8"
+    slot8="D9"
+    slot9="D0" />
+  <editorimages />
+  <campaignsettings
+    PresetName=""
+    TutorialEnabled="True"
+    RadiationEnabled="True"
+    MaxMissionCount="2"
+    WorldHostility="High"
+    StartItemSet="normal"
+    StartingBalanceAmount="Medium"
+    CrewVitalityMultiplier="1"
+    NonCrewVitalityMultiplier="1"
+    OxygenMultiplier="1"
+    FuelMultiplier="1"
+    MissionRewardMultiplier="1"
+    ExperienceRewardMultiplier="1"
+    ShopPriceMultiplier="1"
+    ShipyardPriceMultiplier="1"
+    RepairFailMultiplier="1"
+    ShowHuskWarning="True"
+    PatdownProbability="Medium" />
+</config>
