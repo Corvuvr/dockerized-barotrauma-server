@@ -42,17 +42,19 @@ RUN mkdir -p $HOME/.steam \
 
 
 ARG WORKDIR="/BarotraumaDedicatedServer"
+ARG MODDIR="/root/.local/share/Daedalic Entertainment GmbH/Barotrauma/WorkshopMods/Installed"
 WORKDIR "${WORKDIR}"
 RUN steamcmd +force_install_dir "${WORKDIR}" +login anonymous +app_update 1026340 validate +quit
 
-COPY Installed LocalMods
+COPY Installed "${MODDIR}"
+
 COPY config_player.xml .
 COPY serversettings.xml .
 COPY clientpermissions.xml .
 COPY start.sh .
 
 RUN chmod +x start.sh 
-RUN sed -E -i "s|(path=\")[^\"]*/Installed/|\1$PWD/LocalMods/|g" config_player.xml
+RUN sed -E -i "s|(path=\")[^\"]*/Installed/|\1${MODDIR}/|g" config_player.xml
 
 RUN wget -q https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_patch_linux_server.tar.gz
 RUN tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C .
