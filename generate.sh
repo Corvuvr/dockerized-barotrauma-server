@@ -66,7 +66,7 @@ TMP2=$(mktemp)
 sed -i 's///g' $TMP2 
 
 # Change mod paths to $PWD/Installed
-sed -E -i "s|(path=\")[^\"]*/Installed/|\1$PWD/Installed/|g" $TMP2
+sed -E -i "s|(path=\")[^\"]*/Installed/|\1$PWD/LocalMods/|g" $TMP2
 
 # Apply changes to serversettings.xml
 mv --backup $TMP2 $SERVERSETTINGS

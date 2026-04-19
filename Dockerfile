@@ -30,7 +30,6 @@ ENV LANGUAGE='en_US:en'
 # Create symlink for executable
 RUN ln -s /usr/games/steamcmd /usr/bin/steamcmd
 
-WORKDIR "/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/"
 # Update SteamCMD and verify latest version
 RUN steamcmd +login anonymous +quit
 
@@ -41,9 +40,11 @@ RUN mkdir -p $HOME/.steam \
  && ln -s $HOME/.steam/sdk32/steamclient.so $HOME/.steam/sdk32/steamservice.so \
  && ln -s $HOME/.steam/sdk64/steamclient.so $HOME/.steam/sdk64/steamservice.so
 
+
+WORKDIR "/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/"
 RUN steamcmd +login anonymous +app_update 1026340 validate +quit
 
-COPY Installed .
+COPY Installed LocalMods
 COPY config_player.xml .
 COPY serversettings.xml .
 COPY clientpermissions.xml .
