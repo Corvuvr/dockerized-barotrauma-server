@@ -19,7 +19,7 @@ RUN echo steam steam/question select "I AGREE" | debconf-set-selections \
 ARG DEBIAN_FRONTEND=noninteractive
 RUN dpkg --add-architecture i386 \
  && apt-get update -y \
- && apt-get install -y --no-install-recommends ca-certificates locales steamcmd \
+ && apt-get install -y --no-install-recommends ca-certificates locales steamcmd wget \
  && rm -rf /var/lib/apt/lists/*
 
 # Add unicode support
@@ -41,17 +41,21 @@ RUN mkdir -p $HOME/.steam \
  && ln -s $HOME/.steam/sdk64/steamclient.so $HOME/.steam/sdk64/steamservice.so
 
 
-WORKDIR "/root/.local/share/Steam/steamapps/common/Barotrauma Dedicated Server/"
-RUN steamcmd +login anonymous +app_update 1026340 validate +quit
+ARG WORKDIR="/BarotraumaDedicatedServer"
+WORKDIR "${WORKDIR}"
+RUN steamcmd +force_install_dir "${WORKDIR}" +login anonymous +app_update 1026340 validate +quit
 
 COPY Installed LocalMods
 COPY config_player.xml .
 COPY serversettings.xml .
 COPY clientpermissions.xml .
 COPY start.sh .
-COPY generate.sh .
 
-RUN chmod +x start.sh generate.sh
-RUN ./generate.sh config_player.xml serversettings.xml
+RUN chmod +x start.sh 
+RUN sed -E -i "s|(path=\")[^\"]*/Installed/|\1$PWD/LocalMods/|g" config_player.xml
 
-CMD  ["./start.sh"]
+RUN wget -q https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_patch_linux_server.tar.gz
+RUN tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C .
+
+
+CMD ["./start.sh"]
