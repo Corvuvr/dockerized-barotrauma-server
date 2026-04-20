@@ -5,11 +5,13 @@ cp "$MNT/serversettings.xml" .
 cp "$MNT/clientpermissions.xml" .
 cp "$MNT/config_player.xml" .
 
-DAEDALIC="/root/.local/share/Daedalic Entertainment GmbH/Barotrauma"
-if [[ ! -d "$DAEDALIC" ]] ; then 
-    echo "Path not found: $DAEDALIC"
+if [[ ! -d "$MNT/Barotrauma" ]] ; then 
+    echo "Path not found: $MNT/Barotrauma"
     exit 2
 fi
+DAEDALIC="/root/.local/share/Daedalic Entertainment GmbH/Barotrauma"
+mkdir -p $DAEDALIC
+ln -sf $MNT/Barotrauma $DAEDALIC
 
 MODDIR="$DAEDALIC/WorkshopMods/Installed"
 sed -E -i "s|(path=\")[^\"]*/Installed/|\1${MODDIR}/|g" config_player.xml
