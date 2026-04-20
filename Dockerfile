@@ -40,24 +40,24 @@ RUN mkdir -p $HOME/.steam \
  && ln -s $HOME/.steam/sdk32/steamclient.so $HOME/.steam/sdk32/steamservice.so \
  && ln -s $HOME/.steam/sdk64/steamclient.so $HOME/.steam/sdk64/steamservice.so
 
-
+# Install Barotrauma Dedicated Server
 ARG WORKDIR="/BarotraumaDedicatedServer"
-ARG MODDIR="/root/.local/share/Daedalic Entertainment GmbH/Barotrauma/WorkshopMods/Installed"
 WORKDIR "${WORKDIR}"
 RUN steamcmd +force_install_dir "${WORKDIR}" +login anonymous +app_update 1026340 validate +quit
 
-COPY Installed "${MODDIR}"
+# Load host-specific files
+# COPY config_player.xml .
+# COPY serversettings.xml .
+# COPY clientpermissions.xml .
+# COPY start.sh .
+# RUN chmod +x start.sh 
 
-COPY config_player.xml .
-COPY serversettings.xml .
-COPY clientpermissions.xml .
-COPY start.sh .
+ARG LUACS=
+RUN if [ -n "${LUACS}" ] ; then \
+    wget -q https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_patch_linux_server.tar.gz \
+    && tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C . ; \
+fi
 
-RUN chmod +x start.sh 
-RUN sed -E -i "s|(path=\")[^\"]*/Installed/|\1${MODDIR}/|g" config_player.xml
+RUN mkdir -p "/root/.local/share/Daedalic Entertainment GmbH/Barotrauma" \
 
-RUN wget -q https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_patch_linux_server.tar.gz
-RUN tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C .
-
-
-CMD ["./start.sh"]
+CMD ["./mnt/start.sh"]
