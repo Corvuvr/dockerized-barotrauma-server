@@ -45,13 +45,6 @@ ARG WORKDIR="/BarotraumaDedicatedServer"
 WORKDIR "${WORKDIR}"
 RUN steamcmd +force_install_dir "${WORKDIR}" +login anonymous +app_update 1026340 validate +quit
 
-# Load host-specific files
-# COPY config_player.xml .
-# COPY serversettings.xml .
-# COPY clientpermissions.xml .
-# COPY start.sh .
-# RUN chmod +x start.sh 
-
 ARG LUACS=
 RUN if [ -n "${LUACS}" ] ; then \
     wget -q https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_patch_linux_server.tar.gz \
