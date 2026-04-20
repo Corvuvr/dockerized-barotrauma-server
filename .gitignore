@@ -6,5 +6,7 @@ Installed/*
 !clientpermissions.xml
 !config_player.xml
 !serversettings.xml
+!docker-build.def.sh
+!docker-run.def.sh
 !generate.sh
 !start.sh
