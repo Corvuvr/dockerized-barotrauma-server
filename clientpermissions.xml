@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ClientPermissions>
-    <!--Blah-blah-->
-<ClientPermissions>
+<?xml version="1.0" encoding="utf-8" ?>
+<ClientPermissions> 
+<Client
+    name="Corvuvr"
+    accountid="STEAM_1:1:12345678"
+    permissions="All">
+  </Client>
+</ClientPermissions>
