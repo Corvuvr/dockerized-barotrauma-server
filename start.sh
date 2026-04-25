@@ -1,19 +1,26 @@
 #!/bin/bash
 
-MNT="$(dirname "$0")"
+MNT="$(realpath "$(dirname "$0")")"
 cp "$MNT/serversettings.xml" .
 cp "$MNT/clientpermissions.xml" .
 cp "$MNT/config_player.xml" .
+
+echo "MNT is: $MNT"
 
 if [[ ! -d "$MNT/Barotrauma" ]] ; then 
     echo "Path not found: $MNT/Barotrauma"
     exit 2
 fi
-DAEDALIC="/root/.local/share/Daedalic Entertainment GmbH/Barotrauma"
-mkdir -p $DAEDALIC
-ln -sf $MNT/Barotrauma $DAEDALIC
+DAEDALIC="/root/.local/share/Daedalic Entertainment GmbH"
+mkdir -p "$DAEDALIC"
+ln -sf "$MNT/Barotrauma" "$DAEDALIC"
 
-MODDIR="$DAEDALIC/WorkshopMods/Installed"
+echo "Contents of $DAEDALIC:"
+ls "$DAEDALIC/" -la
+echo "Contents of $DAEDALIC/Barotrauma:"
+ls "$DAEDALIC/Barotrauma" -la
+
+MODDIR="$DAEDALIC/Barotrauma/WorkshopMods/Installed"
 sed -E -i "s|(path=\")[^\"]*/Installed/|\1${MODDIR}/|g" config_player.xml
 
 if [ -n "${SERVERNAME}" ] ; then sed -i "s/name=.*/name=\"${SERVERNAME}\"/"             serversettings.xml ; fi

@@ -51,6 +51,4 @@ RUN if [ -n "${LUACS}" ] ; then \
     && tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C . ; \
 fi
 
-RUN mkdir -p "/root/.local/share/Daedalic Entertainment GmbH/Barotrauma" \
-
 CMD ["./mnt/start.sh"]
