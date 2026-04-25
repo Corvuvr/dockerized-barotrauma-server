@@ -27,21 +27,21 @@ Now copy its' contents here, in the `Barotrauma/` folder.
 
 Run the docker container with variables specific to your server and mounted $PWD. Refer to [docker-run.def.sh](docker-run.def.sh) for a fresh template:
 ```bash
-docker run -it \
-    -e SERVERNAME=MyServer \
-    -e PASSWORD=42 \
+docker run \
+    --rm -it \
+    --net=host \
+    -e SERVERNAME= \
+    -e PASSWORD= \
     -e PUBLIC= \
     -e PORT= \
     -e QUERYPORT= \
-    -e OWNERNAME=CoolGuy1337 \
-    -e OWNERID=123456789 \
-    -e MAXPLAYERS=10 \
-    -v $PWD:/BarotraumaDedicatedServer/mnt:ro \
-    -p 27015:27015 \
-    -p 27016:27016 \
-    barotrauma-server
+    -e OWNERNAME= \
+    -e OWNERID= \
+    -e MAXPLAYERS= \
+    -v $PWD:/BarotraumaDedicatedServer/mnt \
+    barotrauma-server # /bin/bash
 ```
-If everything works, you should be able to connect to the server via ip printed to the console. Note that this readme does not cover port forwarding, therefore you shold do this step yourself.
+If everything works, you should be able to connect to the server via ip printed to the console. Note that this readme does not cover port forwarding, therefore you shold do this step yourself if needed.
 
 ## Helpful links
 - [Hosting a dedicated server](https://barotraumagame.com/wiki/Hosting_a_Dedicated_Server).

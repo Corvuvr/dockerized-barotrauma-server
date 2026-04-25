@@ -1,4 +1,6 @@
-docker run -it \
+docker run \
+    --rm -it \
+    --net=host \
     -e SERVERNAME= \
     -e PASSWORD= \
     -e PUBLIC= \
@@ -8,6 +10,4 @@ docker run -it \
     -e OWNERID= \
     -e MAXPLAYERS= \
     -v $PWD:/BarotraumaDedicatedServer/mnt \
-    -p 27015:27015 \
-    -p 27016:27016 \
-    barotrauma-server
+    barotrauma-server # /bin/bash
