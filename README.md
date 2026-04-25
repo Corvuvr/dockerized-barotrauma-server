@@ -30,17 +30,19 @@ Run the docker container with variables specific to your server and mounted $PWD
 docker run \
     --rm -it \
     --net=host \
-    -e SERVERNAME= \
-    -e PASSWORD= \
+    -e SERVERNAME=MyServer \
+    -e PASSWORD=42 \
     -e PUBLIC= \
     -e PORT= \
     -e QUERYPORT= \
-    -e OWNERNAME= \
-    -e OWNERID= \
-    -e MAXPLAYERS= \
+    -e OWNERNAME=CoolGuy1337 \
+    -e OWNERID=STEAM_1:0:123456789 \
+    -e MAXPLAYERS=10 \
     -v $PWD:/BarotraumaDedicatedServer/mnt \
     barotrauma-server # /bin/bash
 ```
+- Note that the `OWNERNAME` that is used is actually `STEAM_ID2` that you can discover on websites like [steamid.xyz](https://steamid.xyz), but prefixed with `STEAM_1` instead of `STEAM_0`, idk why is so - permissions are assigned that way.
+
 If everything works, you should be able to connect to the server via ip printed to the console. Note that this readme does not cover port forwarding, therefore you shold do this step yourself if needed.
 
 ## Helpful links

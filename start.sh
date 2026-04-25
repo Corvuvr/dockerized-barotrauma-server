@@ -30,7 +30,7 @@ if [ -n "${PORT}" ]       ; then sed -i "s/port=.*/port=\"${PORT}\"/"           
 if [ -n "${QUERYPORT}" ]  ; then sed -i "s/queryport=.*/queryport=\"${QUERYPORT}\"/"    serversettings.xml ; fi
 if [ -n "${MAXPLAYERS}" ] ; then sed -i "s/maxplayers=.*/maxplayers=\"${MAXPLAYERS}\"/" serversettings.xml ; fi
 if [ -n "${OWNERNAME}" ]  ; then sed -i "s/name=.*/name=\"${OWNERNAME}\"/"              clientpermissions.xml ; fi
-if [ -n "${OWNERID}" ]    ; then sed -i "s/accountid=\"STEAM_1:1:.*\"/accountid=\"STEAM_1:1:${OWNERID}\"/" clientpermissions.xml ; fi
+if [ -n "${OWNERID}" ]    ; then sed -i "s/accountid=\".*\"/accountid=\"${OWNERID}\"/"  clientpermissions.xml ; fi
 
 ip=$(hostname -I)
 port=$(grep " port=" serversettings.xml | cut -d'"' -f2)
