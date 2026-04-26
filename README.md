@@ -2,7 +2,7 @@
 
 ## Preparations
 1. Host server locally to generate all necessary files.
-    -  **WARNING**: If you are using LuaCs for Barotrauma, remove it from your active modpack. You will be able to apply working LuaCs patch during the build stage.
+    -  **WARNING**: If you are using LuaCs for Barotrauma, temporarily remove it from your active modpack for the time of step 2. Docker will apply working LuaCs patch during the build stage.
 2. Download the repo, open it, then copy and replace the following files with the ones from your game directory:
     - `serversettings.xml`
     - `config_player.xml`

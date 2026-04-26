@@ -51,4 +51,5 @@ RUN if [ -n "${LUACS}" ] ; then \
     && tar -xzf luacsforbarotrauma_patch_linux_server.tar.gz -C . ; \
 fi
 
+# The following path is mounted
 CMD ["./mnt/start.sh"]

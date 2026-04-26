@@ -3,9 +3,9 @@
 !Barotrauma/README.md
 !README.md
 !Dockerfile
-!clientpermissions.xml
-!config_player.xml
-!serversettings.xml
+!clientpermissions.def.xml
+!config_player.def.xml
+!serversettings.def.xml
 !docker-build.def.sh
 !docker-run.def.sh
 !generate.sh
